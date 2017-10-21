@@ -1,0 +1,49 @@
+﻿@using TP_FINAL.Models
+@model Sucursal
+@{
+    ViewBag.Title = "Kansas Grill & Bar";
+}
+
+<div class="center">
+    <h2 class="titulos">Alta/Baja/Modificacion Sucursal</h2>
+
+    <br /> @Html.ActionLink("Ir a ABM TODO", "ABMTODO", "Home")<br /><br />
+
+    @Html.ActionLink("Agregar nueva sucursal", "BuscarParaNuevaSucursal", "BackOffice")<br />
+
+    <table>
+        <tr>
+            <th>
+                &nbsp; Nombre &nbsp;
+            </th>
+            <th>
+                &nbsp; Imagen &nbsp;
+            </th>
+            <th>
+                &nbsp; Acción &nbsp;
+            </th>
+        </tr>
+        @foreach (Sucursal unaSucursal in ViewBag.misSucursales)
+        {
+            <tr>
+                <td>
+                    &nbsp;@unaSucursal.nombre&nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                    @{
+                        if (unaSucursal.rutaFoto != null)
+                        {
+                            <img width="300" height="200" src=@unaSucursal.rutaFoto /> <br />
+                        }
+                    }&nbsp;
+                </td>
+                <td>
+                    &nbsp; @Html.ActionLink("Ver datos", "VerDatosSucursal", "BackOffice", new { sucursalID = unaSucursal.ID }, null) &nbsp;
+                    &nbsp; @Html.ActionLink("Modificar", "ParaModificarSucursal", "BackOffice", new { sucursalID = unaSucursal.ID }, null) &nbsp;
+                    &nbsp; @Html.ActionLink("Eliminar", "EliminarSucursal", "BackOffice", new { sucursalID = unaSucursal.ID }, null) &nbsp;
+                </td>
+            </tr>
+        }
+    </table>
+</div>

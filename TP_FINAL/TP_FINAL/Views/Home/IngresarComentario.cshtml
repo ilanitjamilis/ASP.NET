@@ -1,0 +1,34 @@
+﻿@using TP_FINAL.Models
+@model Comentario
+
+@{
+    ViewBag.Title = "Kansas Grill & Bar";
+}
+
+<div class="center">
+    <br /><br /> @Html.ActionLink("Ir a sucursales", "CargarSucursales", "Home")<br /><br />
+
+    <h2 class="titulos">Agregar Comentario</h2>
+
+    @{
+        if (ViewBag.Mensaje != "")
+        {
+            <h4>@ViewBag.Mensaje</h4>
+        }
+    }
+
+    @using (Html.BeginForm("InsertarComentario", "Home", FormMethod.Post))
+    {
+        @Html.ValidationMessageFor(x => x.nombreComenta)<br />
+        @Html.Label("Nombre: ") @Html.TextBoxFor(x => x.nombreComenta)<br />
+
+        @Html.ValidationMessageFor(x => x.calificacion)<br />
+        @Html.Label("Calificación: ") @Html.TextBoxFor(x => x.calificacion)<br />
+
+        @Html.ValidationMessageFor(x => x.textoComentario)<br />
+        @Html.Label("Comentario: ") @Html.TextAreaFor(x => x.textoComentario)<br />
+
+
+        <input type="submit" value="Grabar" />
+    }
+</div>

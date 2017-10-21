@@ -1,0 +1,31 @@
+﻿@using TP_FINAL.Models
+@model Sucursal
+
+@{
+    ViewBag.Title = "Kansas Grill & Bar";
+}
+
+<h2 class="titulos">Agregar/Modificar Sucursal</h2>
+
+
+@using (Html.BeginForm((string)ViewBag.Accion, "BackOffice", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.ValidationMessageFor(x => x.nombre)<br />
+    @Html.Label("Nombre: ") @Html.TextBoxFor(x => x.nombre)<br />
+
+    @Html.ValidationMessageFor(x => x.mapa)<br />
+    @Html.Label("Mapa: ") @Html.TextAreaFor(x => x.mapa)<br />
+
+
+    @Html.Label("Subir Foto: ") <input type="file" name="file" id="file" /><br />
+
+    @Html.Label("Provincia: ") @Html.DropDownListFor(x => x.idProvincia, new SelectList(ViewBag.listaProvincias, "idProvincia", "Nombre"))<br /><br />
+
+    @Html.ValidationMessageFor(x => x.domicilio)<br />
+    @Html.Label("Domicilio: ") @Html.TextBoxFor(x => x.domicilio)<br />
+
+    @Html.ValidationMessageFor(x => x.telefono)<br />
+    @Html.Label("Teléfono: ") @Html.TextBoxFor(x => x.telefono)<br />
+
+    <input type="submit" value="Grabar" />
+}

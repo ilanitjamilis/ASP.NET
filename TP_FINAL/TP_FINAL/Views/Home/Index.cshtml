@@ -1,0 +1,111 @@
+﻿@using TP_FINAL.Models
+
+<link href="@Url.Content("/Content/Index.css")" rel="stylesheet" type="text/css" />
+
+@{
+    ViewBag.Title = "Kansas Grill & Bar";
+}
+
+<body id="todo">
+    <div class="center">
+
+        <div id="logo"><img width="300" height="200" src="\Content\logo.jpg" /></div>
+
+        <div class="centrarAlgo">
+            <div id="mycarousel" class="carousel slide" data-ride="carousel" allign=center>
+
+                <ol class="carousel-indicators">
+                    <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#mycarousel" data-slide-to="1"></li>
+                    <li data-target="#mycarousel" data-slide-to="2"></li>
+                    <li data-target="#mycarousel" data-slide-to="3"></li>
+                </ol>
+
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="\Content\1.jpg">
+                    </div>
+                    <div class="item">
+                        <img src="\Content\2.jpg">
+                    </div>
+                    <div class="item">
+                        <img src="\Content\3.jpg">
+                    </div>
+                    <div class="item">
+                        <img src="\Content\4.jpg">
+                    </div>
+                </div>
+
+                <a class="left carousel-control" href="#mycarousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="right carousel-control" href="#mycarousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Siguiente</span>
+                </a>
+            </div>
+        </div> <br /><br />
+
+        <div id="heading1">
+            Celebrando la buena vida a través<br />
+        </div>
+        <div id="heading2">
+            de la comida saludable durante todo el año <br /><br />
+        </div>
+
+        <div id="institucional">
+            <span class="especial">Kansas</span> es un restaurant de Contemporary American Cuisine. El primer Restaurant fue inaugurado en Junio de 1999 en San Isidro.<br /><br />
+
+            Nuestra visión es aportar alimentos de calidad en un ambiente placentero a través de un servicio excelente.<br /><br />
+
+            En <span class="especial">Kansas</span> creemos que la base para preparar un buen plato se encuentra en la calidad de los ingredientes que lo componen. Por eso,<br />
+            mantenemos una relación estrecha con nuestros proveedores para asegurarnos de recibir los mejores productos frescos disponibles en el mercado. Con la ayuda de éstos,<br />
+            preparamos, diariamente y con el mayor cuidado, los platos que servimos.<br /><br />
+
+            En <span class="especial">Kansas</span> consideramos que la música, la arquitectura y la decoración son componentes esenciales de la experiencia gastronómica. <br />
+            Fundimos todos estos elementos para crear un ambience placentero que exalte las sensaciones del paladar. Cada uno de nuestros locales tiene su propio carácter: en su <br />
+            construcción se ha prestado especial atención a los materiales utilizados y al diseño de sus espacios interiores.<br /><br />
+
+            En <span class="especial">Kansas</span> estamos deseosos de satisfacer la confianza que los clientes nos depositan. Procuramos prestar atención a los más pequeños <br />
+            detalles para lograr un servicio rápido y eficiente que supere todas las expectativas.<br /><br />
+
+            Esperamos verlos pronto, disfrutando de <span class="especial">“la nueva experiencia”</span>.<br /><br />
+        </div>
+    </div>
+
+    <br /><br />
+    <div class="centrarAlgo">----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</div>
+    <div class="centrarAlgo">
+        <h2 class="tituloComentarios">Comentarios</h2><br />
+        <div class="tablaCentrar">
+            <table class="tablaComentarios" border="1">
+                <tr>
+                    <th>
+                        &nbsp; Usuario &nbsp;
+                    </th>
+                    <th>
+                        &nbsp; Calificación &nbsp;
+                    </th>
+                    <th>
+                        &nbsp; Comentario &nbsp;
+                    </th>
+                </tr>
+                @foreach (Comentario unComentario in ViewBag.listaComentarios)
+                {
+                    <tr>
+                        <td>
+                            &nbsp; @unComentario.nombreComenta &nbsp;
+                        </td>
+                        <td>
+                            &nbsp; @unComentario.calificacion &nbsp;
+                        </td>
+                        <td>
+                            &nbsp; @unComentario.textoComentario &nbsp;
+                        </td>
+                    </tr>
+                }
+            </table>
+        </div>
+    </div>
+</body>

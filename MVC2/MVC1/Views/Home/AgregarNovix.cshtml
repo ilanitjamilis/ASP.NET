@@ -1,0 +1,27 @@
+﻿@using MVC1.Models
+@model Usuario
+@{
+    ViewBag.Title = "Registracion";
+}
+
+@{
+    ViewBag.Title = "AgregarNovix";
+}
+
+<h2>Agregar Novio/a</h2>
+
+
+    @using(Html.BeginForm("GuardarNovix", "Home", FormMethod.Post, new { enctype = "multipart/form-data" })) { 
+
+        @Html.ValidationMessageFor(x => x.nombre)<br />
+        @Html.Label("Nombre: ") @Html.TextBoxFor(x => x.nombre)<br />
+        @Html.ValidationMessageFor(x => x.apellido)<br />
+        @Html.Label("Apellido: ")@Html.TextBoxFor(x => x.apellido)<br />
+
+        @Html.Label("Suba archivo (foto)")
+        <input type="file" name="file" id="file" />
+        <input type="submit" value="Agregar" />
+    }
+        
+
+    @Html.ActionLink("Volver", "InfoUsuario", "Home")

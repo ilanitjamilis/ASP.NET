@@ -1,0 +1,7 @@
+Z:\5to año\Programacion\Primer Trimestre\AFA-ListasDiccionarios\AFA-ListasDiccionarios\bin\Debug\AFA-ListasDiccionarios.exe
+Z:\5to año\Programacion\Primer Trimestre\AFA-ListasDiccionarios\AFA-ListasDiccionarios\bin\Debug\AFA-ListasDiccionarios.pdb
+Z:\5to año\Programacion\Primer Trimestre\AFA-ListasDiccionarios\AFA-ListasDiccionarios\obj\x86\Debug\AFA_ListasDiccionarios.Form1.resources
+Z:\5to año\Programacion\Primer Trimestre\AFA-ListasDiccionarios\AFA-ListasDiccionarios\obj\x86\Debug\AFA_ListasDiccionarios.Properties.Resources.resources
+Z:\5to año\Programacion\Primer Trimestre\AFA-ListasDiccionarios\AFA-ListasDiccionarios\obj\x86\Debug\AFA-ListasDiccionarios.csproj.GenerateResource.Cache
+Z:\5to año\Programacion\Primer Trimestre\AFA-ListasDiccionarios\AFA-ListasDiccionarios\obj\x86\Debug\AFA-ListasDiccionarios.exe
+Z:\5to año\Programacion\Primer Trimestre\AFA-ListasDiccionarios\AFA-ListasDiccionarios\obj\x86\Debug\AFA-ListasDiccionarios.pdb

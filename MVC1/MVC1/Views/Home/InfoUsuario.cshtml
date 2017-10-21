@@ -1,0 +1,14 @@
+﻿@using MVC1.Models
+@model Usuario
+@{
+    ViewBag.Title = "Información del usuario";
+}
+
+<h2>InfoUsuario</h2>
+
+    Nombre: @Html.ValueFor(x=>x.nombre)<br/>
+    Apellido: @Html.ValueFor(x => x.apellido)<br />
+    Estudiante: @Html.ValueFor(x => x.estudiante)<br />
+    Email: @Html.ValueFor(x => x.mail)<br />
+
+@Html.ActionLink("Ir a inicio", "Index", "Home")

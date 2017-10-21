@@ -1,0 +1,24 @@
+﻿@using TP_FINAL.Models
+@model Plato
+
+@{
+    ViewBag.Title = "Kansas Grill & Bar";
+}
+
+<h2 class="titulos">Agregar/Modificar Plato</h2>
+
+@using (Html.BeginForm((string)ViewBag.Accion, "BackOffice", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.ValidationMessageFor(x => x.nombre)<br />
+    @Html.Label("Nombre: ") @Html.TextBoxFor(x => x.nombre)<br />
+
+    @Html.ValidationMessageFor(x => x.precio)<br />
+    @Html.Label("Precio: ") @Html.TextBoxFor(x => x.precio)<br />
+
+
+    @Html.Label("Subir Foto: ") <input type="file" name="file" id="file" /><br />
+
+    @Html.Label("Tipo de Comida: ") @Html.DropDownListFor(x => x.idTipoComida, new SelectList(ViewBag.listaTiposComidas, "id", "Nombre"))<br /><br />
+
+    <input type="submit" value="Grabar" />
+}

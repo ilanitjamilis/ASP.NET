@@ -1,0 +1,16 @@
+Z:\5to año\Programacion\Primer Trimestre\AFA-Clases\AFA-Clases\bin\Debug\AFA-Clases.exe
+Z:\5to año\Programacion\Primer Trimestre\AFA-Clases\AFA-Clases\bin\Debug\AFA-Clases.pdb
+Z:\5to año\Programacion\Primer Trimestre\AFA-Clases\AFA-Clases\obj\x86\Debug\AFA_Clases.Form1.resources
+Z:\5to año\Programacion\Primer Trimestre\AFA-Clases\AFA-Clases\obj\x86\Debug\AFA_Clases.Properties.Resources.resources
+Z:\5to año\Programacion\Primer Trimestre\AFA-Clases\AFA-Clases\obj\x86\Debug\AFA-Clases.csproj.GenerateResource.Cache
+Z:\5to año\Programacion\Primer Trimestre\AFA-Clases\AFA-Clases\obj\x86\Debug\AFA-Clases.exe
+Z:\5to año\Programacion\Primer Trimestre\AFA-Clases\AFA-Clases\obj\x86\Debug\AFA-Clases.pdb
+Z:\5to año\Programacion\Primer Trimestre\AFA-Clases\AFA-Clases\obj\x86\Debug\AFA-Clases.csprojResolveAssemblyReference.cache
+D:\Ort\5to año\Programacion\Primer Trimestre\AFA-Clases\AFA-Clases\obj\x86\Debug\AFA-Clases.exe
+D:\Ort\5to año\Programacion\Primer Trimestre\AFA-Clases\AFA-Clases\obj\x86\Debug\AFA-Clases.pdb
+D:\Ort\5to año\Programacion\Primer Trimestre\AFA-Clases\AFA-Clases\bin\Debug\AFA-Clases.exe
+D:\Ort\5to año\Programacion\Primer Trimestre\AFA-Clases\AFA-Clases\bin\Debug\AFA-Clases.pdb
+D:\Ort\5to año\Programacion\Primer Trimestre\AFA-Clases\AFA-Clases\obj\x86\Debug\AFA-Clases.csprojResolveAssemblyReference.cache
+D:\Ort\5to año\Programacion\Primer Trimestre\AFA-Clases\AFA-Clases\obj\x86\Debug\AFA_Clases.Form1.resources
+D:\Ort\5to año\Programacion\Primer Trimestre\AFA-Clases\AFA-Clases\obj\x86\Debug\AFA_Clases.Properties.Resources.resources
+D:\Ort\5to año\Programacion\Primer Trimestre\AFA-Clases\AFA-Clases\obj\x86\Debug\AFA-Clases.csproj.GenerateResource.Cache

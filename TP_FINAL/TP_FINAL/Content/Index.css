@@ -1,0 +1,134 @@
+﻿#todo{
+    background-image: url("\Content\background.jpg");
+}
+
+.especial{
+    color:darkred;
+}
+
+#institucional{
+    font-size:18px;
+    margin:10px;
+    float: left;
+}
+
+#logo{
+    margin-left: 380px;
+    margin-top:30px;
+}
+
+#mycarousel{
+    width:1100px;
+    height:700px;
+    margin:10px;
+    margin-top:80px;
+    padding-right:60px;
+}
+
+#heading1{
+    font-size:40px;
+    color: darkred;
+    padding-top:0px;
+}
+
+#heading2{
+    font-size:40px;
+    color:darkgrey;
+    padding-left:30px;
+}
+
+.action{
+    font-weight:bold;
+    color:darkgray;
+    font-size:20px;
+}
+
+.action2{
+    font-weight:bold;
+    color:darkgray;
+    font-size:20px;
+    align-self:center;
+    align-items:center;
+    text-align:center;
+}
+
+#tablaComentarios{
+    padding-top:20px;
+    text-align:left;
+}
+
+#ABM{
+    font-size:40px;
+}
+
+.titulos{
+    color:darkred;
+    font-size:60px;
+    font-weight:bold;
+    align-self:center;
+    align-items:center;
+    text-align:center;
+}
+
+.titulo2{
+    color:darkred;
+    font-size:60px;
+    font-weight:bold;
+    padding-left:40px;
+    padding-bottom:50px;
+    text-align:center;
+}
+
+#btnLogin{
+    padding-left:250px;
+}
+
+#amb1{
+    padding-left:250px;
+    padding-right:200px;
+}
+
+#amb2{
+    padding-left:350px;
+}
+
+.titulosCampos{
+    font-size:25px;
+}
+
+.infoCampos{
+    font-size:35px;
+}
+
+.centerFoto{
+    display: table;
+    margin: 0 auto;
+}
+
+.center{
+    align-content:center;
+    align-self:center;
+}
+
+.tituloSuc{
+    align-self:center;
+    align-items:center;
+    text-align:center;
+    font-weight:bold;
+    font-size:40px;
+}
+
+.centrarAlgo{
+    align-self:center;
+    align-items:center;
+    text-align:center;
+}
+
+.tablaCentrar{
+    padding-left:320px;
+}
+
+.tituloComentarios{
+    font-weight:bold;
+    font-size:40px;
+}

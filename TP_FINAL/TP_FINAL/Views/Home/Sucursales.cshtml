@@ -1,0 +1,27 @@
+﻿@using TP_FINAL.Models
+@model Sucursal
+@{
+    ViewBag.Title = "Kansas Grill & Bar";
+}
+<div class="jumbotron">
+<h2 class="titulos">Sucursales</h2>
+</div>
+@foreach (Sucursal unaSucursal in ViewBag.listaSucursales)
+{
+    <div class="jumbotron">
+        <div class="media">
+            <div class="media-left media-middle">
+                <a href="#">
+                    <div>
+                        <img width="1150" height="500" src=@unaSucursal.rutaFoto />
+                    </div>
+                </a>
+            </div>
+            <br>
+            <div class="media-body">
+                <h3 class="tituloSuc">@unaSucursal.nombre</h3>
+                <p class="action2">@Html.ActionLink("Ver más", "MasInfoLocal", "Home", new { sucursalID = unaSucursal.ID }, null)</p>
+            </div>
+        </div>
+    </div>
+}

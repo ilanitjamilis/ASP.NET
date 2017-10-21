@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AFA-Clases", "AFA-Clases\AFA-Clases.csproj", "{F03BBDDC-4E4C-4621-A222-E4FE91456066}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F03BBDDC-4E4C-4621-A222-E4FE91456066}.Debug|x86.ActiveCfg = Debug|x86
+		{F03BBDDC-4E4C-4621-A222-E4FE91456066}.Debug|x86.Build.0 = Debug|x86
+		{F03BBDDC-4E4C-4621-A222-E4FE91456066}.Release|x86.ActiveCfg = Release|x86
+		{F03BBDDC-4E4C-4621-A222-E4FE91456066}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

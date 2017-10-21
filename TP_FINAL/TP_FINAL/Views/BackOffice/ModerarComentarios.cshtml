@@ -1,0 +1,44 @@
+﻿@using TP_FINAL.Models
+@model Comentario
+@{
+    ViewBag.Title = "Kansas Grill & Bar";
+}
+
+<h2 class="titulos">Moderar Comentarios</h2>
+
+<br /><br /> @Html.ActionLink("Ir a ABM TODO", "ABMTODO", "Home")<br /><br />
+
+<table>
+    <tr>
+        <th>
+            &nbsp; Usuario &nbsp;
+        </th>
+        <th>
+            &nbsp; Calificación &nbsp;
+        </th>
+        <th>
+            &nbsp; Comentario &nbsp;
+        </th>
+        <th>
+            Acciones
+        </th>
+    </tr>
+    @foreach (Comentario unComentario in ViewBag.misComentarios)
+    {
+        <tr>
+            <td>
+                &nbsp; @unComentario.nombreComenta &nbsp;
+            </td>
+            <td>
+                &nbsp; @unComentario.calificacion &nbsp;
+            </td>
+            <td>
+                &nbsp; @unComentario.textoComentario &nbsp;
+            </td>
+            <td>
+                &nbsp; @Html.ActionLink("Aceptar", "AceptarComentario", "BackOffice", new { comentarioID = unComentario.idComentario }, null) &nbsp;
+                &nbsp; @Html.ActionLink("Eliminar", "EliminarComentario", "BackOffice", new { comentarioID = unComentario.idComentario }, null) &nbsp;
+            </td>
+        </tr>
+    }
+</table>

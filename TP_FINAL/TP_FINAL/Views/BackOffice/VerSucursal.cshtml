@@ -1,0 +1,22 @@
+﻿@using TP_FINAL.Models
+@model Sucursal
+
+@{
+    ViewBag.Title = "Kansas Grill & Bar";
+}
+
+<div class="center">
+    <br /><br /> @Html.ActionLink("Volver atrás", "TraerInfoParaSucursales", "BackOffice")<br /><br />
+
+    <div class="centrarAlgo">
+        <h2 class="titulos">@Model.nombre</h2><br />
+        <img width="1100" height="400" src=@Model.rutaFoto /> <br />
+        @Html.Label("Domicilio: ") @Model.domicilio<br />
+        @Html.Label("Teléfono: ") @Model.telefono<br />
+        @Html.Label("Provincia: ") @Model.provincia<br />
+        @Html.Label("Pais: ") @Model.pais<br />
+
+        <iframe src="@Model.mapa" width="1100" height="400" frameborder="0" style="border:0" </iframe>
+
+    </div>
+</div>

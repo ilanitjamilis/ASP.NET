@@ -1,0 +1,17 @@
+﻿@using TP_FINAL.Models
+@model Plato
+
+@{
+    ViewBag.Title = "Kansas Grill & Bar";
+}
+
+<div class="center">
+    <br /> <br />@Html.ActionLink("Volver atrás", "CargarPlatos", "BackOffice")<br /> <br />
+
+    <div class="centrarAlgo">
+        <h2 class="titulos">@Model.nombre</h2><br />
+        <img width="600" height="400" src=@Model.rutaFoto /> <br />
+        @Html.Label("Precio: ") @Model.precio<br />
+        @Html.Label("Tipo comida: ") @Model.tipoPlatoString
+    </div>
+</div>

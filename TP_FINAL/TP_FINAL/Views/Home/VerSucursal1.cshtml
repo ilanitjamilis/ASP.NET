@@ -1,0 +1,66 @@
+﻿@using TP_FINAL.Models
+@model Sucursal
+
+@{
+    ViewBag.Title = "Kansas Grill & Bar";
+}
+
+<br /><br /> @Html.ActionLink("Volver atrás", "CargarSucursales", "Home")<br /><br />
+
+
+<div class="jumbotron">
+    <div class="media">
+        <div class="media-left media-middle">
+            <a href="#">
+                <div>
+                    <div class="centerFoto"><img width="1150" height="500" src=@Model.rutaFoto /></div>
+                </div>
+            </a>
+        </div>
+        <br>
+        <div class="centrarAlgo">
+            <h2 class="titulos">@Model.nombre</h2>
+            @Html.Label("Domicilio: ") @Model.domicilio<br />
+            @Html.Label("Teléfono: ") @Model.telefono<br />
+            @Html.Label("Provincia: ") @Model.provincia<br />
+            @Html.Label("Pais: ") @Model.pais<br /><br />
+        </div>
+        <iframe src="@Model.mapa" width="1100" height="400" frameborder="0" style="border:0"></iframe>
+    </div>
+</div>
+
+<div class="jumbotron">
+    <div class="centrarAlgo">
+        <h2 class="tituloComentarios">Comentarios</h2><br/>
+        <div class="tablaComentarios">
+            <table border="1">
+                <tr>
+                    <th>
+                        &nbsp; Usuario &nbsp;
+                    </th>
+                    <th>
+                        &nbsp; Calificación &nbsp;
+                    </th>
+                    <th>
+                        &nbsp; Comentario &nbsp;
+                    </th>
+                </tr>
+                @foreach (Comentario unComentario in ViewBag.listaComentarios)
+                {
+                    <tr>
+                        <td>
+                            &nbsp; @unComentario.nombreComenta &nbsp;
+                        </td>
+                        <td>
+                            &nbsp; @unComentario.calificacion &nbsp;
+                        </td>
+                        <td>
+                            &nbsp; @unComentario.textoComentario &nbsp;
+                        </td>
+                    </tr>
+                }
+            </table>
+        </div><br /><br />
+        @Html.ActionLink("Ingresar comentario", "ParaIngresarComentario", "Home", new { idSucursal = @Model.ID }, null)<br /><br />
+    </div>
+</div>

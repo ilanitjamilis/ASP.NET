@@ -1,0 +1,26 @@
+﻿@using TP_FINAL.Models
+@model Plato
+@{
+    ViewBag.Title = "Kansas Grill & Bar";
+}
+<div class="jumbotron">
+    <h2 class="titulos">Menú</h2>
+</div>
+<div class="jumbotron">
+    <div class="row">
+        @foreach (Plato unPlato in ViewBag.listaPlatos)
+        {
+            <div class="centrarAlgo">
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <a href=@unPlato.rutaFoto target="_blank"> <img height="310" width="310" src=@unPlato.rutaFoto></a>
+                        <div class="caption">
+                            <h2>@unPlato.nombre</h2>
+                            <h4>$@unPlato.precio</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

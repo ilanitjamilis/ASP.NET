@@ -1,0 +1,38 @@
+﻿@using TP_FINAL.Models
+@model Plato 
+@{
+    ViewBag.Title = "Kansas Grill & Bar";
+}
+
+<div class="center">
+    <h2 class="titulos">Alta/Baja/Modificacion MENÚ</h2>
+
+    <br /><br /> @Html.ActionLink("Ir a ABM TODO", "ABMTODO", "Home")<br /><br />
+
+    @Html.ActionLink("Agregar nueva comida al menú", "BuscarParaNuevaComida", "BackOffice")
+
+    <table>
+        <tr>
+            <th>
+                &nbsp; Nombre &nbsp;
+            </th>
+            <th>
+                &nbsp; Acciones &nbsp;
+            </th>
+        </tr>
+        @foreach (Plato unPlato in ViewBag.listaPlatos)
+        {
+            <tr>
+                <td>
+                    &nbsp; @unPlato.nombre &nbsp;
+                </td>
+                <td>
+                    &nbsp; @Html.ActionLink("Ver datos", "VerDatosPlato", "BackOffice", new { platoID = unPlato.ID }, null) &nbsp;
+                    &nbsp; @Html.ActionLink("Modificar", "ParaModificar", "BackOffice", new { platoID = unPlato.ID }, null) &nbsp;
+                    &nbsp; @Html.ActionLink("Eliminar", "EliminarPlato", "BackOffice", new { platoID = unPlato.ID }, null) &nbsp;
+                </td>
+            </tr>
+        }
+    </table>
+
+</div>

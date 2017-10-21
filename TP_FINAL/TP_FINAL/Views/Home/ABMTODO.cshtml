@@ -1,0 +1,15 @@
+﻿@using TP_FINAL.Models
+@model Usuario
+<link href="@Url.Content("/Content/Index.css")" rel="stylesheet" type="text/css" />
+@{ 
+    ViewBag.Title = "Kansas Grill & Bar";
+}
+
+
+<h2 class="titulo2">@ViewBag.Bienvenida</h2>
+
+<div id="ABM">
+    <div id="amb1">@Html.ActionLink("ABM Sucursales", "TraerInfoParaSucursales", "BackOffice") &nbsp; &nbsp;
+    @Html.ActionLink("ABM Menú", "CargarPlatos", "BackOffice")</div>
+    <div id="amb2">@Html.ActionLink("Moderar comentarios", "TraerInfoParaModerarSuc", "BackOffice")</div>
+</div>

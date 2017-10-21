@@ -1,0 +1,27 @@
+﻿@using MVC1.Models
+@model Usuario
+
+
+<h2>@ViewBag.Tituliyo</h2>
+
+    Nombre: @Html.ValueFor(x=>x.nombre)<br/>
+    Apellido: @Html.ValueFor(x => x.apellido)<br />
+    Estudiante: @Html.ValueFor(x => x.estudiante)<br />
+    Email: @Html.ValueFor(x => x.mail)<br /><br />
+
+Novios/as: 
+@{
+
+    foreach (Novix esteNovix in ViewBag.ListaNovix)
+
+    {
+
+        <li>@esteNovix.nombre &nbsp @esteNovix.apellido &nbsp <img src= esteNovix.rutaFoto/> </li>
+        
+
+    }
+
+}
+
+@Html.ActionLink("Ir a inicio", "Index", "Home")
+@Html.ActionLink("Agregar novio/a", "AgregarNovix", "Home")

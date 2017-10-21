@@ -1,0 +1,32 @@
+﻿@using TP_FINAL.Models
+@model Usuario
+@{
+    ViewBag.Title = "Kansas Grill & Bar";
+}
+
+<div class="center">
+    <h2 class="titulos">Inicio</h2>
+    <!--  Html.BeginForm("Login", "home", FormMethod.Post) -->
+
+    <div class="centrarAlgo">
+        <form method="POST" action="@Url.Action("Login", "Home")">
+            @{
+                if (ViewBag.ErrorLogueo != null)
+                {
+                    @ViewBag.ErrorLogueo;
+            }
+            }
+
+            @Html.ValidationMessageFor(x => x.usuario)<br />
+            <img width="50" height="50" src="\Content\user.png" /> &nbsp;&nbsp; @Html.TextBoxFor(x => x.usuario)<br />
+
+            @Html.ValidationMessageFor(x => x.contraseña)<br />
+            <img width="50" height="50" src="\Content\pass.png" /> &nbsp;&nbsp; @Html.PasswordFor(x => x.contraseña)<br />
+
+            <div id="btnLogin">
+                <input type="image" width="80" height="80" src="\Content\submit.png" border="1" />
+            </div>
+
+        </form>
+    </div>
+</div>
